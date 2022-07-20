@@ -1,0 +1,155 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-icons/font/bootstrap-icons';
+
+// scss
+@import 'animations';
+
+$header-nav-height: 80px;
+$aside-width: 300px;
+
+html, body, main{
+    min-height: 100vh;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+main{
+    margin-top: $header-nav-height;
+}
+
+header nav {
+    min-height: $header-nav-height;
+}
+
+#board{
+    overflow: auto;
+}
+
+.main-carousel{
+    margin-top: -4rem;
+    .carousel-item img{
+        height: calc(90vh - $header-nav-height);
+        width: 100%;
+        object-position: 50% 50%;
+        object-fit: cover;
+    }
+}
+
+
+footer{
+    bottom: 0px;
+}
+
+.contact-container{
+    width: 10rem;
+    height: 10rem;
+    margin: 10rem;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    .contact-name{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .contacts{
+        position: relative;
+        width: 10rem;
+        height: 10rem;
+        .contact{
+            width: 7rem;
+            height: 7rem;
+            z-index: -1;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            transition: 1s;
+            .contact-info{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+        }
+    }
+}
+
+.active-container{
+    .contacts{
+        .contact{
+            &:nth-child(1){
+                top: -4rem;
+                transform: translateX(-50%) translateY(-50%);
+                z-index: 0;
+            }
+            &:nth-child(2){
+                left: -4rem;
+                transform: translateX(-50%) translateY(-50%);
+                z-index: 0;
+            }
+            &:nth-child(3){
+                left: 7rem;
+                transform: translateX(50%) translateY(-50%);
+                z-index: 0;
+            }
+            &:nth-child(4){
+                top: 14rem;
+                transform: translateX(-50%) translateY(-50%);
+                z-index: 0;
+            }
+        }
+    }
+}
+
+.dark-contact-container{
+    background-color: rgb(33, 37, 41);
+    color: rgb(248, 249, 250);
+    &:hover{
+        box-shadow: 0px 0px 5px 5px rgba(33, 37, 41, .5);
+    }
+    .contacts{
+        .contact{
+            background-color: rgb(33, 37, 41);
+            &:hover{
+                color: #ffc107;
+            }
+        }
+    }
+}
+
+.contacts-container{
+    background-image: url('../../public/images/background.webp');
+    background-size: cover;
+    height: calc(100vh + 8rem);
+    margin-top: -4rem;
+    margin-bottom: -4rem;
+}
+
+@media screen and (min-width: 768px) {
+    aside #dashboard{
+        margin-top: $header-nav-height;
+        width: $aside-width;
+        visibility: visible!important;
+        transform: none!important;
+    }
+
+    #board{
+        margin-left: $aside-width;
+    }
+}
