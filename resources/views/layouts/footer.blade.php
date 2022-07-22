@@ -17,27 +17,27 @@
             </ul>
             <ul class="nav justify-content-center  fs-1 flex-column flex-sm-row text-center">
                 <li class="nav-item">
-                    <a class="nav-link text-secondary" href="https://github.com/Mahmoud217TR" target="_blank">
+                    <a class="nav-link text-secondary" href="#" target="_blank">
                         <i class="bi bi-github"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-secondary" href="https://www.linkedin.com/in/mahmoud-mahmoud-ab8708183/" target="_blank">
+                    <a class="nav-link text-secondary" href="#" target="_blank">
                         <i class="bi bi-linkedin"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-secondary" href="https://www.facebook.com/mahmoud.mahmoud.927758/" target="_blank">
+                    <a class="nav-link text-secondary" href="https://www.facebook.com/profile.php?id=100083308833930" target="_blank">
                         <i class="bi bi-facebook"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-secondary" href="https://twitter.com/Mahmoud2TR" target="_blank">
+                    <a class="nav-link text-secondary" href="#" target="_blank">
                         <i class="bi bi-twitter"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-secondary" href="https://www.youtube.com/channel/UCXUjk50xF0ePU3sn8TZAPqQ" target="_blank">
+                    <a class="nav-link text-secondary" href="#" target="_blank">
                         <i class="bi bi-youtube"></i>
                     </a>
                 </li>

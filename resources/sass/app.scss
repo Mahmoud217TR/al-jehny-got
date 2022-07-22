@@ -39,7 +39,7 @@ header nav {
 }
 
 .main-carousel{
-    margin-top: -4rem;
+    margin-top: -2rem;
     .carousel-item img{
         height: calc(90vh - $header-nav-height);
         width: 100%;
@@ -136,9 +136,9 @@ footer{
 .contacts-container{
     background-image: url('../../public/images/background.webp');
     background-size: cover;
-    height: calc(100vh + 8rem);
-    margin-top: -4rem;
-    margin-bottom: -4rem;
+    height: calc(100vh + 4rem);
+    margin-top: -2rem;
+    margin-bottom: -2rem;
 }
 
 @media screen and (min-width: 768px) {

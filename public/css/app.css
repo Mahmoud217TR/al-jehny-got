@@ -17698,7 +17698,7 @@ header nav {
 }
 
 .main-carousel {
-  margin-top: -4rem;
+  margin-top: -2rem;
 }
 .main-carousel .carousel-item img {
   height: calc(90vh - 80px);
@@ -17788,9 +17788,9 @@ footer {
 .contacts-container {
   background-image: url(/images/background.webp?9a9c708ab121e7618192d2cb933fbc92);
   background-size: cover;
-  height: calc(100vh + 8rem);
-  margin-top: -4rem;
-  margin-bottom: -4rem;
+  height: calc(100vh + 4rem);
+  margin-top: -2rem;
+  margin-bottom: -2rem;
 }
 
 @media screen and (min-width: 768px) {

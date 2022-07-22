@@ -27,7 +27,8 @@
             <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
                 <div class="container">
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        <img src="{{ asset('images/logo.svg') }}" alt="logo" width="50">
+                        <span>{{ config('app.name', 'Laravel') }}</span>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#dashboard">
                         <span class="navbar-toggler-icon"></span>

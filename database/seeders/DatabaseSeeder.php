@@ -17,11 +17,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        User::factory(1)->create([
-            'name' => 'Admin',
-            'email' => 'admin@users.test',
-        ]);
+        // User::factory(1)->create([
+        //     'name' => 'Admin',
+        //     'email' => 'admin@users.test',
+        // ]);
 
-        Category::factory(5)->has(Product::factory(4))->create();
+        // Category::factory(5)->has(Product::factory(4))->create();
+
+        User::create([
+            'name' => 'Ahmad',
+            'email' => 'aljehny.got@gmail.com',
+            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',
+        ]);
     }
 }
