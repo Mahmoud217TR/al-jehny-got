@@ -9,6 +9,7 @@ use Image;
 
 class ImageUploadController extends Controller
 {
+    // external storage
     public function store(Request $request, Product $product){
         $validator = $this->getImageValidator($request->all());
         if($validator->passes()){
